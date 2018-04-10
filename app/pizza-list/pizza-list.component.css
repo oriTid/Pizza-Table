@@ -1,0 +1,13 @@
+.AllTable {
+
+align-content: center;
+
+
+}
+
+.tableHeadCell {
+    font-weight: bold;
+    background-color: gainsboro;    
+    min-width: 100px;
+}
+

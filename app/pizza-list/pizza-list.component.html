@@ -1,0 +1,29 @@
+
+<h2> Pizzas List</h2>
+
+<table class="AllTable" border="6" align="center">
+<tr>
+<td class="tableHeadCell">Diameter</td>
+<td class="tableHeadCell">Slices</td>
+<td class="tableHeadCell">Toppings</td>
+<td class="tableHeadCell">Price</td>
+</tr>
+
+
+<tr *ngFor="let i of pizzaList, let n=index">
+<td *ngIf="n%2==0" style="background-color: aqua">{{i.diameter}}cm</td>
+<td *ngIf="n%2!=0" style="background-color: greenyellow">{{i.diameter}}cm</td>
+<td *ngIf="n%2==0" style="background-color: aqua">{{i.slices}}</td>
+<td *ngIf="n%2!=0" style="background-color: greenyellow">{{i.slices}}</td>
+<td *ngIf="n%2==0" style="background-color: aqua">{{i.toppings}}</td>
+<td *ngIf="n%2!=0" style="background-color: greenyellow">{{i.toppings}}</td>
+<td *ngIf="n%2==0" style="background-color: aqua">${{i.PizzaPrice}}</td>
+<td *ngIf="n%2!=0" style="background-color: greenyellow">${{i.PizzaPrice}}</td>
+
+
+  
+  
+</tr>
+
+
+</table>
